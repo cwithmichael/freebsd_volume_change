@@ -1,4 +1,4 @@
-This program allows you to change the volume on FreeBSD systems using the mixer command. I did this in a couple of hours and the code is exteremely bad. I can not be held responsible if you use this program and it blows up your toaster.
+This program allows you to change the volume on FreeBSD systems using the mixer command. I did this in a couple of hours so I can not be held responsible if you use this program and it blows up your toaster.
 
 Installation Instructions:
 

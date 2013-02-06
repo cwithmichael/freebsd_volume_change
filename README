@@ -3,3 +3,11 @@ This program allows you to change the volume on FreeBSD systems using the mixer 
 Installation Instructions:
 
 sudo make install 
+
+.xinitrc example:
+I have provided and example of my xinitrc below since this app is primarily for people running light window managers.
+
+exec tint2 -c ~/.config/tint2/default.tint2rc &
+exec mix &
+exec openbox 
+

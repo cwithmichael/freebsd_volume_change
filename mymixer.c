@@ -24,6 +24,7 @@ void scale(GtkStatusIcon *status_icon)
 	FILE* pipe = popen(cmd, "r");
 	if(!pipe) printf("ERROR\n");
 	char cur_vol[255];
+
 	while(!feof(pipe))
 	{
 		if(fgets(cur_vol, 255, pipe) != NULL)
@@ -83,7 +84,7 @@ static GtkStatusIcon *create_tray_icon() {
         g_signal_connect(G_OBJECT(tray_icon), 
                          "popup-menu",
                          G_CALLBACK(tray_icon_on_menu), NULL);
-        gtk_status_icon_set_from_file(tray_icon,"sound.png");
+        gtk_status_icon_set_from_file(tray_icon,"/usr/local/share/freebsd_mix/sound.png");
         gtk_status_icon_set_tooltip(tray_icon, 
                                     "Mixer");
         gtk_status_icon_set_visible(tray_icon, TRUE);
